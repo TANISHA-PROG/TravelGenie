@@ -1,5 +1,6 @@
 # TravelGenie - Smart Travel Agent App
 
+.
 A smart travel planning application built with Vanilla JavaScript, HTML, and CSS.
 
 ## Features
