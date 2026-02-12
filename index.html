@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agent App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-solid fa-plane-departure"></i> TravelGenie
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul class="nav-links">
+                    <li><a href="#/" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="#/destinations" class="nav-link"><i class="fa-solid fa-compass"></i> Explore Destinations</a></li>
+                    <li><a href="#/planner" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Smart Planner</a></li>
+                    <li><a href="#/budget" class="nav-link"><i class="fa-solid fa-wallet"></i> Budget Planner</a></li>
+                    <li><a href="#/safety" class="nav-link"><i class="fa-solid fa-shield-heart"></i> Medical / Safety</a></li>
+                    <li><a href="#/saved" class="nav-link"><i class="fa-solid fa-bookmark"></i> Saved Trips</a></li>
+                    <li><a href="#/support" class="nav-link"><i class="fa-solid fa-circle-question"></i> Help / Support</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div id="auth-section">
+                    <!-- Auth content injected here -->
+                </div>
+                <div class="currency-picker mt-2">
+                    <select id="currency-selector" class="nav-select">
+                        <option value="USD">USD ($)</option>
+                        <option value="EUR">EUR (€)</option>
+                        <option value="GBP">GBP (£)</option>
+                        <option value="INR">INR (₹)</option>
+                        <option value="JPY">JPY (¥)</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content-wrapper">
+            <div id="main-content">
+                <!-- Dynamic Content Here -->
+            </div>
+            <footer class="main-footer">
+                <p>&copy; 2026 TravelGenie Agent App. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Scripts (Order Matters) -->
+    <script src="./js/utils/theming.js"></script>
+    <script src="./js/store.js"></script>
+    <script src="./js/utils/data.js"></script>
+    <!-- New Rules Engine replaces medical.js -->
+    <script src="./js/utils/rules.js"></script> 
+    <script src="./js/utils/hotels.js"></script>
+    <script src="./js/utils/transport.js"></script>
+    <script src="./js/views/auth.js"></script>
+    <script src="./js/views/destination-list.js"></script>
+    <script src="./js/views/home.js"></script>
+    <script src="./js/views/planner.js"></script>
+    <script src="./js/views/support.js"></script>
+    <script src="./js/views/results.js"></script>
+    <script src="./js/router.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
